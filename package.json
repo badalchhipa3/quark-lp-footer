@@ -1,0 +1,15 @@
+{
+  "name": "mock1",
+  "version": "1.0.0",
+  "description": "Footer For Quark Expeditions",
+  "main": "index.html",
+  "scripts": {
+    "start": "sass sass/main.sass style.css",
+    "watch": "sass --watch ./sass/main.sass style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.72.0"
+  }
+}

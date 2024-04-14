@@ -1,0 +1,97 @@
+*,
+*::after,
+*::before
+    box-sizing: border-box
+
+body,
+h1,
+h2,
+h3,
+h4,
+p
+    margin: 0 
+    user-select: none
+
+ul,
+ol
+    list-style: none
+    padding: 0
+    margin: 0
+
+body
+    font-size: $body-regular
+    font-family: $ff-sans
+    color: $clr-gray-5
+    line-height: 1.5
+
+img
+    max-width: 100%
+    height: 100%
+    object-fit: cover
+
+a
+    display: inline-block
+    text-decoration: none
+    color: inherit
+    cursor: pointer
+    font-size: $body-regular
+
+h4
+    font-size: $body-regular
+    color: $clr-gray-50
+    margin-bottom: $space-4
+    text-align: left
+
+    @media( max-width: 62.5em )
+        margin-top: $space-4
+
+
+.btn
+    font-weight: 700
+    border: 1px solid
+    padding-top: 1rem
+    padding-bottom: 1rem
+    text-align: center
+    width: 100%
+    border-radius: .5em
+    color: $clr-gray-90 
+    max-width: 20rem
+    margin-bottom: $space-7
+    transition: background-color .3s ease
+
+    &--primary
+        background-color: $clr-yellow
+
+        &:hover
+            background-color: $clr-white
+            border-color: $clr-yellow
+
+        &:active
+            background-color: $clr-yellow-dark
+
+    &--secondary
+        background-color: $clr-white
+
+        &:hover
+         background-color: $clr-black
+         color: $clr-white
+         border-color: $clr-white
+
+         &:active
+            background-color: $clr-gray-90   
+
+select
+    font-size: $body-regular
+    padding: 1rem 1rem
+    width: 100%
+    border-radius: .5em
+    appearance: none
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'%3E%3Cpath d='M1.41 0.300003L6 4.88L10.59 0.300003L12 1.71L6 7.71L0 1.71L1.41 0.300003Z' fill='%23232933'/%3E%3C/svg%3E")
+    background-repeat: no-repeat
+    background-position: right 10px center
+    max-width: 20rem
+
+.hidden
+    @media (max-width: 62.5em) 
+        display: none !important
+        
